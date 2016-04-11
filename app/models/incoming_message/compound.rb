@@ -17,7 +17,7 @@ class IncomingMessage
       @standup = channel.today_standups.where(user_id: reffered_user.id).first!
 
     rescue ActiveRecord::RecordNotFound
-      raise InvalidCommandError.new("<@#{user.slack_id}> Given user is not participating of today standup.")
+      raise InvalidCommandError.new("<@#{user.slack_id}> Given user is not participating in today's curry order.")
     end
 
     # @override

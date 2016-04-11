@@ -13,7 +13,7 @@ class IncomingMessage
 
     def validate!
       if @standup.idle? || @standup.active?
-        raise InvalidCommandError.new("<@#{user.slack_id}> You can not delete an answer before your standup.")
+        raise InvalidCommandError.new("<@#{user.slack_id}> You can not delete an answer before your order.")
       end
 
       super

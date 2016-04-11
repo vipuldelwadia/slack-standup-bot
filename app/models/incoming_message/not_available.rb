@@ -20,9 +20,9 @@ class IncomingMessage
       elsif @standup.idle?
         raise InvalidCommandError.new("You need to wait until <@#{reffered_user.slack_id}> turns.")
       elsif @standup.completed?
-        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> has already completed standup today.")
+        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> has already completed their order for today.")
       elsif @standup.answering?
-        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> is doing his/her standup.")
+        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> is doing his/her order.")
       end
 
       super

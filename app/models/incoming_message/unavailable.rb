@@ -18,7 +18,7 @@ class IncomingMessage
       if !@standup.active?
         raise InvalidCommandError.new("You need to wait until your turn.")
       elsif @standup.completed?
-        raise InvalidCommandError.new("You've already completed your standup today.")
+        raise InvalidCommandError.new("You've already completed your order for today.")
       end
 
       super

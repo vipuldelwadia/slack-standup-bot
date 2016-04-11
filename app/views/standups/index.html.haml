@@ -23,7 +23,7 @@
 .masonry-container.row.clearfix
   - if @standups.empty?
     .alert.alert-warning
-      There are no standups for this day.
+      There is no curry order for this day.
 
   - else
     - @standups.each do |standup|
@@ -50,23 +50,22 @@
 
           - else
             .yesterday-section.section
-              %h2 What I worked on yesterday:
+              %h2 Curry:
               %ul
                 - if standup.yesterday.present?
                   - standup.yesterday.split(/\n/).each do |text|
                     %li= emojify(text)
 
             .today-section.section
-              %h2 What I am working on today:
+              %h2 Rice:
               %ul
                 - if standup.today.present?
                   - standup.today.split(/\n/).each do |text|
                     %li= emojify(text)
 
             .blocks-section.section
-              %h2 What is in my way:
+              %h2 Naan:
               %ul
                 - if standup.conflicts.present?
                   - standup.conflicts.split(/\n/).each do |text|
                     %li= emojify(text)
-

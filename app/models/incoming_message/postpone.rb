@@ -13,9 +13,9 @@ class IncomingMessage
 
     def validate!
       if !@standup.active?
-        raise InvalidCommandError.new("You can only skip the standup when asked.")
+        raise InvalidCommandError.new("You can only skip the order when asked.")
       elsif channel.today_standups.pending.empty?
-        raise InvalidCommandError.new("You can not skip your standup because you are the last one in the stack.")
+        raise InvalidCommandError.new("You cannot skip your order because you are the last one in the stack.")
       end
 
       super

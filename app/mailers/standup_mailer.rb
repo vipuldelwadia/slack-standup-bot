@@ -13,7 +13,7 @@ class StandupMailer < ApplicationMailer
 
     return if emails.blank? || @standups.blank?
 
-    mail to: emails.join(', '), subject: "Standup of #{date.strftime('%A, %d %B, %Y')}" do |format|
+    mail to: emails.join(', '), subject: "Order for #{date.strftime('%A, %d %B, %Y')}" do |format|
       format.html
     end
   end

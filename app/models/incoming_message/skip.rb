@@ -19,11 +19,11 @@ class IncomingMessage
       elsif @standup.idle?
         raise InvalidCommandError.new("You need to wait until <@#{reffered_user.slack_id}> turns.")
       elsif @standup.completed?
-        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> has already completed standup today.")
+        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> has already completed their order today.")
       elsif @standup.answering?
-        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> is doing his/her standup.")
+        raise InvalidCommandError.new("<@#{reffered_user.slack_id}> is doing his/her order.")
       elsif channel.today_standups.pending.empty?
-        raise InvalidCommandError.new("The standup can not be skipped because is the last one in the stack.")
+        raise InvalidCommandError.new("The order can not be skipped because is the last one in the stack.")
       end
 
       super

@@ -1,36 +1,36 @@
 en:
   incoming_message:
-    standup_completed: Today's standup is already completed.
-    standup_started: Standup has started.
-    standup_welcome: Welcome to standup! Type "-Start" to get started.
+    standup_completed: Today's curry has already been ordered.
+    standup_started: Curry order has started.
+    standup_welcome: Welcome to the curry order! Type "-Start" to get started.
 
-    welcome: Good morning <@%{user}>, Welcome to daily standup! Are you ready to begin? ('-yes', or '-skip')
-    bot_died: "<!here|here> The bot was killed by someone :sob:, please restart the standup to continue."
+    welcome: Good morning <@%{user}>, Welcome to the daily curry order! Are you ready to begin? ('-yes', or '-skip')
+    bot_died: "<!here|here> The bot was killed by someone :sob:, please restart the curry order to continue."
 
-    skip: <@%{user}>, I'll get back to you at the end of standup.
+    skip: <@%{user}>, I'll get back to you at the end of the curry order.
     not_available: <@%{user}> is not available.
 
     answer_saved: Your answer has been saved.
 
-    wait_your_turn: <@%{user}> Please, Wait for your turn or the end of the standup.
-    already_submitted: You have already submitted a standup for today, thanks! <@%{user}>
+    wait_your_turn: <@%{user}> Please, Wait for your turn or the end of the curry order.
+    already_submitted: You have already submitted a curry order for today, thanks! <@%{user}>
 
     help: |
       Standup-bot help.
            Admin Commands.
-                 • -start                                   Begin Standup.
-                 • -vacation: @user          Skip users standup for the day.
-                 • -skip: @user                    Place user at the end of standup.
-                 • -n/a: @user                       Skip users standup for the day.
-                 • -quit-standup                 Quit standup.
+                 • -start                                   Begin curry order.
+                 • -vacation: @user          Skip user's curry order for the day.
+                 • -skip: @user                    Place user at the end of curry order.
+                 • -n/a: @user                       Skip user's curry order for the day.
+                 • -quit-standup                 Quit curry order.
            User Commands.
-                 • -yes                                       Begin your standup.
-                 • -skip                                     Skip your standup until the end of standup.
-                 • -edit: #(1,2,3)                  Edit your answer for the day.
-                 • -delete: #(1,2,3)             Delete your answer for the day.
+                 • -yes                                       Begin your curry order.
+                 • -skip                                     Skip your curry order until the end of curry order.
+                 • -edit: #(1,2,3)                  Edit your order for the day.
+                 • -delete: #(1,2,3)             Delete your order for the day.
 
-    quit: Quiting Standup
-    resume: That concludes our standup. For a recap visit %{url}
+    quit: Quiting curry order
+    resume: That concludes our curry order. For a recap visit %{url}
 
   settings:
     index:
