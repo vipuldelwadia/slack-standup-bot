@@ -115,7 +115,7 @@ class Standup < ActiveRecord::Base
 
     def current_question
         if yesterday.nil?
-            Time.now.wday == 1 ? "<@#{user.slack_id}> 1. Which curry would you like?"
+            "<@#{user.slack_id}> 1. Which curry would you like?"
 
         elsif today.nil?
             "<@#{user.slack_id}> 2. Which rice would you like (plain/pulau/coconut)?"
